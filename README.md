@@ -11,6 +11,19 @@ For this, I had to:
 
 This was made in the Autumn 2022, and my commenting style was a bit much at the time. Hopefully from my submission, you can see that it has changed since.
 
+## Running
+To run, download Python3, tkinter. Pillow and the required files:
+- AsteroidsMain.py
+- fonts.txt
+- leaderboard.py
+- Images directory
+
+Or just clone the directory.
+
+Then run using `python AsteroidsMain.py`
+
+N.B. This has not been tested in a while, and due to newer releases of various packages, some functions may be deprecated.
+
 ## Changelog
 
 ### Reading Variables

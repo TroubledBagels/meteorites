@@ -160,7 +160,7 @@ class Explosion:  # Class for explosions
         elif size == 3:
             x = 48
             y = 48
-        resizedImage = img.resize((x, y), Image.ANTIALIAS)  # Resizes the image with antialiasing
+        resizedImage = img.resize((x, y), Image.LANCZOS)  # Resizes the image with antialiasing
         self.explosionSprite = ImageTk.PhotoImage(resizedImage)  # Sets sprite variable to be the image
         # N.B. if a constant reference to the image isn't kept, tkinter won't display it correctly as (I assume)
         # It gets removed from memory at the end of the function
@@ -1097,7 +1097,7 @@ if __name__ == '__main__':  # Executes every time the program is run normally
 
     image = Image.open("Images/blackboard.jpg")  # Fetches the image of blackboard
     # Below scales the image to the window size using antialiasing
-    scaledImage = image.resize((Constants.WINDOWWIDTH, Constants.WINDOWHEIGHT), Image.ANTIALIAS)
+    scaledImage = image.resize((Constants.WINDOWWIDTH, Constants.WINDOWHEIGHT), Image.LANCZOS)
     # Sets blackboardImage to be the resized image
     blackboardImage = ImageTk.PhotoImage(scaledImage)
 
